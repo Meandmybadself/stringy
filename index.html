@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <title>Stringy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=us-ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <link media="screen, print" rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <meta name="description" content="All the string manips.">
+    <meta http-equiv="x-rim-auto-match" content="none" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+<body>
+
+<div class='container-fluid'>
+  <div class='row'> 
+    <div class='col-xs-offset-1 col-xs-10'>
+      <h1>Stringy</h1>
+      <p>A pretty plain Thomas Jane string manipulation tool.</p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-xs-offset-1 col-xs-10 regex-holder'>
+      <form>
+        <button type="button" id="encode-uri" class="btn btn-sm btn-default">Encode URI</button>
+        <button type="button" id="decode-uri" class="btn btn-sm btn-default">Decode URI</button>
+        <button type="button" id="encode-uri-component" class="btn btn-sm btn-default">Encode URI Component</button>
+        <button type="button" id="decode-uri-component" class="btn btn-sm btn-default">Decode URI Component</button>
+        <button type="button" id="sort" class="btn btn-sm btn-default">Sort</button>
+        <button type="button" id="dedupe" class="btn btn-sm btn-default">Dedupe</button>
+        <button type="button" id="lowercase" class="btn btn-sm btn-default">Lowercase</button>
+        <button type="button" id="uppercase" class="btn btn-sm btn-default">Uppercase</button>
+      </form>
+      <hr/>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-xs-offset-1 col-xs-5'>
+      <form>
+        <label for='corpus'>Content</label>
+        <textarea class='form-control' name='corpus' id='corpus' rows='15'></textarea> 
+      </form>
+    </div>
+    <div class='col-xs-5'>
+      <form>
+        <label>Result</label>
+        <textarea class='form-control' rows='15' id='results'></textarea>
+      </form>
+  </div>
+  <div class="row footer">
+    <div class="col-xs-offset-1 col-xs-10">
+    <hr/>
+    <p class='pull-right'>Love, <a href='http://permanentrecord.io'>Permanent Record</a></p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56010514-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
